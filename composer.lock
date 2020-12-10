@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "87f49276c9a0487bc83c1f020ee2f4e1",
+    "content-hash": "10fcd575a00c08e4bf0d8200d7a90322",
     "packages": [
         {
             "name": "composer/ca-bundle",
@@ -2217,24 +2217,27 @@
         },
         {
             "name": "wikimedia/less.php",
-            "version": "v2.0.0",
+            "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/wikimedia/less.php.git",
-                "reference": "c1affb4d4472c9e100fc80bf456b4334862ace3c"
+                "reference": "ae9a875fb549a35780d10edcf3936163342d59d2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/wikimedia/less.php/zipball/c1affb4d4472c9e100fc80bf456b4334862ace3c",
-                "reference": "c1affb4d4472c9e100fc80bf456b4334862ace3c",
+                "url": "https://api.github.com/repos/wikimedia/less.php/zipball/ae9a875fb549a35780d10edcf3936163342d59d2",
+                "reference": "ae9a875fb549a35780d10edcf3936163342d59d2",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.1"
+                "php": ">=7.2.9"
             },
             "require-dev": {
-                "phpunit/phpunit": "7.5.14"
+                "jakub-onderka/php-parallel-lint": "1.0.0",
+                "mediawiki/minus-x": "1.0.0",
+                "phpunit/phpunit": "^8.5"
             },
+            "default-branch": true,
             "bin": [
                 "bin/lessc"
             ],
@@ -2276,9 +2279,9 @@
             ],
             "support": {
                 "issues": "https://github.com/wikimedia/less.php/issues",
-                "source": "https://github.com/wikimedia/less.php/tree/v2.0.0"
+                "source": "https://github.com/wikimedia/less.php/tree/master"
             },
-            "time": "2020-02-04T22:36:29+00:00"
+            "time": "2020-09-21T08:04:09+00:00"
         }
     ],
     "packages-dev": [
@@ -4044,16 +4047,17 @@
     "minimum-stability": "stable",
     "stability-flags": {
         "tedivm/jshrink": 20,
+        "wikimedia/less.php": 20,
         "lox/xhprof": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
     "platform": {
-        "php": ">=7.2.5"
+        "php": ">=7.2.9"
     },
     "platform-dev": [],
     "platform-overrides": {
-        "php": "7.2.5"
+        "php": "7.2.9"
     },
     "plugin-api-version": "2.0.0"
 }
