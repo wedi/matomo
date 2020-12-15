@@ -784,7 +784,6 @@ var broadcast = {
         if (url.indexOf('?') >= 0) {
             url = url.substr(url.indexOf('?')+1);
         }
-        url = decodeURIComponent(url);
 
         var urlPieces = url.split('&');
 
@@ -799,7 +798,7 @@ var broadcast = {
         lookFor = param + '[]=';
         var result = [];
         for (var j=0; j<urlPieces.length; j++) {
-            if (urlPieces[j].indexOf(lookFor) === 0) {
+            if (urlPieces[j].indexOf(lookFor) === 0 || decodeURIComponent(urlPieces[j]).indexOf(lookFor) === 0) {
                 result.push(getSingleValue(urlPieces[j]));
             }
         }
